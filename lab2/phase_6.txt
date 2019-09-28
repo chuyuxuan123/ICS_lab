@@ -1,0 +1,75 @@
+0000000000001554 <phase_6>:
+    1554:	41 55                	push   X
+    1556:	41 54                	push   Y
+    1558:	55                   	push   Z
+    1559:	53                   	push   W
+    155a:	48 83 ec 58          	sub    $0x58,%rsp
+    155e:	4c 8d 64 24 30       	lea    0x30(%rsp),Y
+    1563:	4c 89 e6             	mov    Y,2nd
+    1566:	e8 4c 0a 00 00       	callq  1fb7 <read_six_numbers>
+    156b:	41 bd 00 00 00 00    	mov    $0x0,Xd
+    1571:	eb 25                	jmp    1598 <phase_6+0x44>
+    1573:	41 83 c5 01          	add    $0x1,Xd
+    1577:	41 83 fd 06          	cmp    $0x6,Xd
+    157b:	74 38                	je     15b5 <phase_6+0x61>
+    157d:	44 89 eb             	mov    Xd,%ebx
+    1580:	48 63 c3             	movslq %ebx,return
+    1583:	8b 44 84 30          	mov    0x30(%rsp,return,4),%eax
+    1587:	39 45 00             	cmp    %eax,0x0(Z)
+    158a:	74 22                	je     15ae <phase_6+0x5a>//explode_bomb
+    158c:	83 c3 01             	add    $0x1,%ebx
+    158f:	83 fb 05             	cmp    $0x5,%ebx
+    1592:	7e ec                	jle    1580 <phase_6+0x2c>
+    1594:	49 83 c4 04          	add    $0x4,Y
+    1598:	4c 89 e5             	mov    Y,Z
+    159b:	41 8b 04 24          	mov    (Y),%eax
+    159f:	83 e8 01             	sub    $0x1,%eax
+    15a2:	83 f8 05             	cmp    $0x5,%eax
+    15a5:	76 cc                	jbe    1573 <phase_6+0x1f>
+    15a7:	e8 cf 09 00 00       	callq  1f7b <explode_bomb>
+    15ac:	eb c5                	jmp    1573 <phase_6+0x1f>
+    15ae:	e8 c8 09 00 00       	callq  1f7b <explode_bomb>
+    15b3:	eb d7                	jmp    158c <phase_6+0x38>
+    15b5:	be 00 00 00 00       	mov    $0x0,%esi
+    15ba:	8b 4c 34 30          	mov    0x30(%rsp,2nd,1),%ecx
+    15be:	b8 01 00 00 00       	mov    $0x1,%eax
+    15c3:	48 8d 15 86 21 20 00 	lea    0x202186(%rip),%rdx        # 203750 <node1>
+    15ca:	83 f9 01             	cmp    $0x1,%ecx
+    15cd:	7e 0b                	jle    15da <phase_6+0x86>
+    15cf:	48 8b 52 08          	mov    0x8(%rdx),%rdx
+    15d3:	83 c0 01             	add    $0x1,%eax
+    15d6:	39 c8                	cmp    %ecx,%eax
+    15d8:	75 f5                	jne    15cf <phase_6+0x7b>
+    15da:	48 89 14 74          	mov    %rdx,(%rsp,2nd,2)
+    15de:	48 83 c6 04          	add    $0x4,2nd
+    15e2:	48 83 fe 18          	cmp    $0x18,2nd
+    15e6:	75 d2                	jne    15ba <phase_6+0x66>
+    15e8:	48 8b 1c 24          	mov    (%rsp),W
+    15ec:	48 89 e0             	mov    %rsp,return
+    15ef:	48 8d 74 24 28       	lea    0x28(%rsp),2nd
+    15f4:	48 89 d9             	mov    W,%rcx
+    15f7:	48 8b 50 08          	mov    0x8(return),%rdx
+    15fb:	48 89 51 08          	mov    %rdx,0x8(%rcx)
+    15ff:	48 83 c0 08          	add    $0x8,return
+    1603:	48 89 d1             	mov    %rdx,%rcx
+    1606:	48 39 c6             	cmp    return,2nd
+    1609:	75 ec                	jne    15f7 <phase_6+0xa3>
+    160b:	48 c7 42 08 00 00 00 	movq   $0x0,0x8(%rdx)
+    1612:	00 
+    1613:	bd 05 00 00 00       	mov    $0x5,%ebp
+    1618:	eb 09                	jmp    1623 <phase_6+0xcf>
+    161a:	48 8b 5b 08          	mov    0x8(W),W
+    161e:	83 ed 01             	sub    $0x1,%ebp
+    1621:	74 11                	je     1634 <phase_6+0xe0>
+    1623:	48 8b 43 08          	mov    0x8(W),return
+    1627:	8b 00                	mov    (return),%eax
+    1629:	39 03                	cmp    %eax,(W)
+    162b:	7d ed                	jge    161a <phase_6+0xc6>
+    162d:	e8 49 09 00 00       	callq  1f7b <explode_bomb>
+    1632:	eb e6                	jmp    161a <phase_6+0xc6>
+    1634:	48 83 c4 58          	add    $0x58,%rsp
+    1638:	5b                   	pop    W
+    1639:	5d                   	pop    Z
+    163a:	41 5c                	pop    Y
+    163c:	41 5d                	pop    X
+    163e:	c3                   	retq   

@@ -1,0 +1,215 @@
+
+rtarget：     文件格式 elf64-x86-64
+
+SYMBOL TABLE:
+0000000000400238 l    d  .interp	0000000000000000              .interp
+0000000000400254 l    d  .note.ABI-tag	0000000000000000              .note.ABI-tag
+0000000000400274 l    d  .note.gnu.build-id	0000000000000000              .note.gnu.build-id
+0000000000400298 l    d  .gnu.hash	0000000000000000              .gnu.hash
+00000000004002c8 l    d  .dynsym	0000000000000000              .dynsym
+0000000000400658 l    d  .dynstr	0000000000000000              .dynstr
+00000000004007a8 l    d  .gnu.version	0000000000000000              .gnu.version
+00000000004007f8 l    d  .gnu.version_r	0000000000000000              .gnu.version_r
+0000000000400838 l    d  .rela.dyn	0000000000000000              .rela.dyn
+00000000004008b0 l    d  .rela.plt	0000000000000000              .rela.plt
+0000000000400bb0 l    d  .init	0000000000000000              .init
+0000000000400bd0 l    d  .plt	0000000000000000              .plt
+0000000000400de0 l    d  .text	0000000000000000              .text
+0000000000402e24 l    d  .fini	0000000000000000              .fini
+0000000000402e30 l    d  .rodata	0000000000000000              .rodata
+00000000004035cc l    d  .eh_frame_hdr	0000000000000000              .eh_frame_hdr
+0000000000403870 l    d  .eh_frame	0000000000000000              .eh_frame
+0000000000604e08 l    d  .init_array	0000000000000000              .init_array
+0000000000604e10 l    d  .fini_array	0000000000000000              .fini_array
+0000000000604e18 l    d  .jcr	0000000000000000              .jcr
+0000000000604e20 l    d  .dynamic	0000000000000000              .dynamic
+0000000000604ff0 l    d  .got	0000000000000000              .got
+0000000000605000 l    d  .got.plt	0000000000000000              .got.plt
+0000000000605120 l    d  .data	0000000000000000              .data
+00000000006054a0 l    d  .bss	0000000000000000              .bss
+0000000000000000 l    d  .comment	0000000000000000              .comment
+0000000000000000 l    d  .debug_aranges	0000000000000000              .debug_aranges
+0000000000000000 l    d  .debug_info	0000000000000000              .debug_info
+0000000000000000 l    d  .debug_abbrev	0000000000000000              .debug_abbrev
+0000000000000000 l    d  .debug_line	0000000000000000              .debug_line
+0000000000000000 l    d  .debug_str	0000000000000000              .debug_str
+0000000000000000 l    d  .debug_loc	0000000000000000              .debug_loc
+0000000000000000 l    d  .debug_ranges	0000000000000000              .debug_ranges
+0000000000000000 l    df *ABS*	0000000000000000              crtstuff.c
+0000000000604e18 l     O .jcr	0000000000000000              __JCR_LIST__
+0000000000400e10 l     F .text	0000000000000000              deregister_tm_clones
+0000000000400e50 l     F .text	0000000000000000              register_tm_clones
+0000000000400e90 l     F .text	0000000000000000              __do_global_dtors_aux
+00000000006054c8 l     O .bss	0000000000000001              completed.6972
+0000000000604e10 l     O .fini_array	0000000000000000              __do_global_dtors_aux_fini_array_entry
+0000000000400eb0 l     F .text	0000000000000000              frame_dummy
+0000000000604e08 l     O .init_array	0000000000000000              __frame_dummy_init_array_entry
+0000000000000000 l    df *ABS*	0000000000000000              main.c
+0000000000400ed6 l     F .text	0000000000000092              usage
+0000000000400f68 l     F .text	0000000000000125              initialize_target
+0000000000000000 l    df *ABS*	0000000000000000              scramble-16.c
+0000000000000000 l    df *ABS*	0000000000000000              buf.c
+0000000000000000 l    df *ABS*	0000000000000000              config.c
+0000000000000000 l    df *ABS*	0000000000000000              visible.c
+0000000000000000 l    df *ABS*	0000000000000000              farm-16.c
+0000000000000000 l    df *ABS*	0000000000000000              support.c
+0000000000401abd l     F .text	0000000000000059              save_char
+0000000000606124 l     O .bss	0000000000000004              gets_cnt
+00000000004034e0 l     O .rodata	0000000000000010              trans_char
+0000000000605520 l     O .bss	0000000000000c01              gets_buf
+0000000000401b16 l     F .text	0000000000000017              save_term
+0000000000000000 l    df *ABS*	0000000000000000              driverlib.c
+00000000004020e3 l     F .text	0000000000000012              rio_readinitb
+0000000000402120 l     F .text	00000000000000dc              urlencode
+00000000004021fc l     F .text	000000000000005e              rio_writen
+000000000040225a l     F .text	000000000000008b              rio_read
+00000000004022e5 l     F .text	000000000000007f              rio_readlineb
+0000000000000000 l    df *ABS*	0000000000000000              gencookie.c
+0000000000000000 l    df *ABS*	0000000000000000              crtstuff.c
+0000000000404280 l     O .eh_frame	0000000000000000              __FRAME_END__
+0000000000604e18 l     O .jcr	0000000000000000              __JCR_END__
+0000000000000000 l    df *ABS*	0000000000000000              
+0000000000604e10 l       .init_array	0000000000000000              __init_array_end
+0000000000604e20 l     O .dynamic	0000000000000000              _DYNAMIC
+0000000000604e08 l       .init_array	0000000000000000              __init_array_start
+00000000004035cc l       .eh_frame_hdr	0000000000000000              __GNU_EH_FRAME_HDR
+0000000000605000 l     O .got.plt	0000000000000000              _GLOBAL_OFFSET_TABLE_
+0000000000402e20 g     F .text	0000000000000002              __libc_csu_fini
+0000000000401a17 g     F .text	0000000000000007              addval_401
+0000000000000000       F *UND*	0000000000000000              strcasecmp@@GLIBC_2.2.5
+0000000000401a52 g     F .text	0000000000000007              addval_272
+0000000000000000       F *UND*	0000000000000000              __errno_location@@GLIBC_2.2.5
+0000000000000000       F *UND*	0000000000000000              srandom@@GLIBC_2.2.5
+0000000000000000       F *UND*	0000000000000000              strncmp@@GLIBC_2.2.5
+0000000000605120  w      .data	0000000000000000              data_start
+0000000000401274 g     F .text	000000000000057b              scramble
+0000000000606130 g     O .bss	0000000000000008              stack_top
+0000000000000000       F *UND*	0000000000000000              strcpy@@GLIBC_2.2.5
+00000000004019ef g     F .text	0000000000000007              addval_294
+0000000000000000       F *UND*	0000000000000000              puts@@GLIBC_2.2.5
+00000000004019d6 g     F .text	0000000000000006              mid_farm
+00000000006054a0 g     O .bss	0000000000000008              stdin@@GLIBC_2.2.5
+0000000000401833 g     F .text	000000000000005a              touch2
+0000000000401a11 g     F .text	0000000000000006              getval_109
+0000000000000000       F *UND*	0000000000000000              write@@GLIBC_2.2.5
+000000000040188d g     F .text	0000000000000081              hexmatch
+0000000000401e35 g     F .text	0000000000000028              fail
+000000000060548c g       .data	0000000000000000              _edata
+00000000004019ca g     F .text	0000000000000006              getval_137
+0000000000402034 g     F .text	00000000000000af              stable_launch
+0000000000402e24 g     F .fini	0000000000000000              _fini
+0000000000000000       F *UND*	0000000000000000              mmap@@GLIBC_2.2.5
+0000000000000000       F *UND*	0000000000000000              printf@@GLIBC_2.2.5
+00000000004019f6 g     F .text	0000000000000007              addval_348
+0000000000401a4b g     F .text	0000000000000007              setval_351
+0000000000402364 g     F .text	000000000000077a              submitr
+0000000000605480 g     O .data	0000000000000008              buf_offset
+0000000000401a31 g     F .text	0000000000000006              getval_292
+00000000006054f8 g     O .bss	0000000000000004              check_level
+0000000000000000       F *UND*	0000000000000000              memset@@GLIBC_2.2.5
+0000000000605488 g     O .data	0000000000000004              notify
+0000000000402b0b g     F .text	00000000000001db              init_driver
+00000000004017ef g     F .text	0000000000000016              getbuf
+0000000000000000       F *UND*	0000000000000000              alarm@@GLIBC_2.2.5
+0000000000000000       F *UND*	0000000000000000              close@@GLIBC_2.2.5
+0000000000401a88 g     F .text	0000000000000007              setval_128
+0000000000606128 g     O .bss	0000000000000001              target_prefix
+0000000000401a03 g     F .text	0000000000000007              setval_231
+0000000000401eb1 g     F .text	0000000000000054              seghandler
+0000000000000000       F *UND*	0000000000000000              read@@GLIBC_2.2.5
+0000000000000000       F *UND*	0000000000000000              __libc_start_main@@GLIBC_2.2.5
+00000000006054fc g     O .bss	0000000000000004              vlevel
+0000000000605120 g       .data	0000000000000000              __data_start
+00000000004019d0 g     F .text	0000000000000006              getval_347
+0000000000000000       F *UND*	0000000000000000              signal@@GLIBC_2.2.5
+00000000006054e8 g     O .bss	0000000000000008              global_offset
+0000000000401a2b g     F .text	0000000000000006              getval_300
+00000000006054a8 g     O .bss	0000000000000008              optarg@@GLIBC_2.2.5
+0000000000000000       F *UND*	0000000000000000              gethostbyname@@GLIBC_2.2.5
+0000000000605150 g     O .data	0000000000000008              course
+0000000000401b60 g     F .text	0000000000000052              Gets
+0000000000401aa3 g     F .text	0000000000000007              addval_143
+0000000000000000       F *UND*	0000000000000000              fprintf@@GLIBC_2.2.5
+0000000000000000  w      *UND*	0000000000000000              __gmon_start__
+0000000000000000       F *UND*	0000000000000000              strtol@@GLIBC_2.2.5
+0000000000605128 g     O .data	0000000000000000              .hidden __dso_handle
+0000000000401a75 g     F .text	0000000000000006              getval_279
+0000000000000000       F *UND*	0000000000000000              memcpy@@GLIBC_2.14
+0000000000401a67 g     F .text	0000000000000007              setval_103
+0000000000605148 g     O .data	0000000000000008              lab
+0000000000401a6e g     F .text	0000000000000007              addval_464
+0000000000402e30 g     O .rodata	0000000000000004              _IO_stdin_used
+0000000000401a59 g     F .text	0000000000000007              setval_209
+0000000000401b2d g     F .text	0000000000000033              check_fail
+0000000000605160 g     O .data	0000000000000320              host_table
+0000000000605500 g     O .bss	0000000000000004              authkey
+00000000004019e8 g     F .text	0000000000000007              addval_380
+0000000000000000       F *UND*	0000000000000000              time@@GLIBC_2.2.5
+0000000000401a37 g     F .text	0000000000000007              addval_366
+00000000004019af g     F .text	0000000000000007              setval_452
+0000000000000000       F *UND*	0000000000000000              random@@GLIBC_2.2.5
+0000000000401a7b g     F .text	0000000000000006              getval_336
+0000000000402db0 g     F .text	0000000000000065              __libc_csu_init
+0000000000000000       F *UND*	0000000000000000              _IO_getc@@GLIBC_2.2.5
+0000000000401fab g     F .text	0000000000000089              launch
+0000000000000000       F *UND*	0000000000000000              __isoc99_sscanf@@GLIBC_2.7
+0000000000605140 g     O .data	0000000000000008              user_id
+0000000000401bb2 g     F .text	00000000000001c5              notify_server
+0000000000401f59 g     F .text	0000000000000052              sigalrmhandler
+0000000000401a60 g     F .text	0000000000000007              addval_133
+00000000004019c4 g     F .text	0000000000000006              getval_414
+0000000000606138 g       .bss	0000000000000000              _end
+00000000004019dc g     F .text	0000000000000005              add_xy
+0000000000400de0 g     F .text	000000000000002b              _start
+0000000000401a81 g     F .text	0000000000000007              addval_115
+000000000040190e g     F .text	0000000000000068              touch3
+0000000000401d77 g     F .text	00000000000000be              validate
+0000000000401805 g     F .text	000000000000002e              touch1
+0000000000401aaa g     F .text	0000000000000006              getval_362
+00000000006054f0 g     O .bss	0000000000000008              infile
+0000000000401ab0 g     F .text	0000000000000007              addval_375
+00000000004020f5 g     F .text	000000000000002b              sigalrm_handler
+0000000000402ade g     F .text	000000000000002d              init_timeout
+00000000006054e0 g     O .bss	0000000000000008              global_save_stack
+000000000060548c g       .bss	0000000000000000              __bss_start
+0000000000000000       F *UND*	0000000000000000              munmap@@GLIBC_2.2.5
+000000000040108d g     F .text	00000000000001e7              main
+0000000000000000       F *UND*	0000000000000000              bcopy@@GLIBC_2.2.5
+00000000004019b6 g     F .text	0000000000000007              setval_121
+00000000004019e1 g     F .text	0000000000000007              addval_461
+0000000000401f05 g     F .text	0000000000000054              illegalhandler
+0000000000401ab7 g     F .text	0000000000000006              end_farm
+0000000000000000       F *UND*	0000000000000000              fopen@@GLIBC_2.2.5
+0000000000401a8f g     F .text	0000000000000007              setval_354
+0000000000402ce6 g     F .text	000000000000006e              driver_post
+0000000000605130 g     O .data	0000000000000004              target_id
+0000000000000000       F *UND*	0000000000000000              getopt@@GLIBC_2.2.5
+0000000000401e5d g     F .text	0000000000000054              bushandler
+0000000000401a1e g     F .text	0000000000000007              setval_473
+0000000000605504 g     O .bss	0000000000000004              cookie
+0000000000401a96 g     F .text	0000000000000007              setval_477
+0000000000000000       F *UND*	0000000000000000              strtoul@@GLIBC_2.2.5
+00000000004019a9 g     F .text	0000000000000006              getval_169
+0000000000402d54 g     F .text	0000000000000032              check
+0000000000401a9d g     F .text	0000000000000006              getval_437
+0000000000000000       F *UND*	0000000000000000              gethostname@@GLIBC_2.2.5
+0000000000000000       F *UND*	0000000000000000              sprintf@@GLIBC_2.2.5
+0000000000000000       F *UND*	0000000000000000              exit@@GLIBC_2.2.5
+0000000000000000       F *UND*	0000000000000000              connect@@GLIBC_2.2.5
+0000000000605490 g     O .data	0000000000000000              .hidden __TMC_END__
+0000000000401a44 g     F .text	0000000000000007              setval_225
+000000000040199c g     F .text	0000000000000006              start_farm
+0000000000401a0a g     F .text	0000000000000007              setval_113
+00000000004019fd g     F .text	0000000000000006              getval_228
+0000000000402d86 g     F .text	000000000000001f              gencookie
+0000000000401a25 g     F .text	0000000000000006              getval_220
+00000000004019a2 g     F .text	0000000000000007              setval_488
+0000000000605508 g     O .bss	0000000000000004              is_checker
+0000000000400bb0 g     F .init	0000000000000000              _init
+00000000004019bd g     F .text	0000000000000007              addval_166
+0000000000401a3e g     F .text	0000000000000006              getval_407
+00000000006054c0 g     O .bss	0000000000000008              stderr@@GLIBC_2.2.5
+0000000000000000       F *UND*	0000000000000000              socket@@GLIBC_2.2.5
+0000000000401976 g     F .text	0000000000000026              test
+
+

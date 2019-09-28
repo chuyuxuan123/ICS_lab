@@ -1,0 +1,3 @@
+mov $0x6044fe, %edi
+push $0x4017dc
+ret

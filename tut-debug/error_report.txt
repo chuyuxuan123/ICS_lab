@@ -1,0 +1,96 @@
+/*
+ * BUG#0
+ * description: 
+     miss semicolon
+ * location: 
+ *   int a = 10  (line 18)
+ * evidence: 
+ *   test.c:19: error: two or more data types in declaration specifiers
+ */
+
+BUG#1
+description:
+    miss semicolon
+location:
+    enum { buf_size = buf_nrec * 100 } (line 52)
+evidence:
+    gen_sort.c:54:9: error: expected ‘;’, identifier or ‘(’ before ‘struct’
+
+
+BUG#2
+description:
+    miss semicolon 
+location:
+    }record_t; (line 58)
+evidence:
+    gen_sort.c:60:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘static’
+
+
+BUG#3
+description:
+    spell mistake
+location:
+    gen_rec(record_t *rec) (line 114)
+evidence:
+    gen_sort.c:114:9: error: unknown type name ‘record’
+
+
+BUG#4
+description:
+    miss {
+location:
+    if (!file) (line 188)
+evidence:
+    gen_sort.c:188:2: warning: this ‘if’ clause does not guard... 
+
+
+BUG#5
+description:
+    head file not include
+location:
+    line 40
+evidence:
+    gen_sort.c:172:3: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+
+
+BUG#6
+description:
+    open file mode
+location:
+    FILE *file = fopen(fn, "w"); (line 187)
+evidence:
+    emmmmm...not evident
+
+
+
+BUG#7
+description:
+    forget one term in the record the second one 
+location:
+    enum { rec_len = key_len + recno_len +  pad_len }; (line 49)
+evidence:
+    hard to find
+
+
+
+BUG#8
+description:
+    wrong length of buffer
+location:
+	char *buf = (char *)malloc(buf_size) ; (line 180)
+evidence:
+    ...
+
+
+
+BUG#9
+description:
+    wu fuck shuo i and j
+location:
+    for (j = 0; j < 10; j++ )
+evidence:
+    i'm dying.......tooooooooo hard to find
+
+
+only find 9...can't find more
+but can compile successfully and the output is right

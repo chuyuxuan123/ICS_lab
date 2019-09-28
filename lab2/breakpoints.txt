@@ -1,0 +1,11 @@
+启动gdb调试前 加断点
+-b main
+-b explode_bomb
+-b phase_n
+
+gdb启用汇编调试 用ni跳下一条指令 si跳入函数内部
+p可以打印出需要的值 寄存器中的值用$R(e.g.$rdi,$rsi)表示
+
+gdb 启动时添加指令
+ $gdb --command=a.cfg
+这样就可以把命令一次加到文件a.cfg中

@@ -1,0 +1,133 @@
+# bytes 833
+# CPE 8.53
+# SCORE 39.3
+
+
+judge1:
+	iaddq $-10, %rdx
+	jge Loop1
+judge2:
+	iaddq $5, %rdx
+	jge Loop2
+	iaddq $5, %rdx
+	je Done
+	jmp Loop
+
+Loop1:
+	mrmovq (%rdi), %r8
+	mrmovq 8(%rdi), %r9
+	mrmovq 16(%rdi), %r10
+	mrmovq 24(%rdi), %r11
+	mrmovq 32(%rdi), %r12
+	mrmovq 40(%rdi), %r13
+	mrmovq 48(%rdi), %r14
+	mrmovq 56(%rdi), %rcx
+	mrmovq 64(%rdi), %rbx
+	mrmovq 72(%rdi), %rbp
+
+	rmmovq %r8, (%rsi)
+	rmmovq %r9, 8(%rsi)
+	rmmovq %r10, 16(%rsi)
+	rmmovq %r11, 24(%rsi)
+	rmmovq %r12, 32(%rsi)
+	rmmovq %r13, 40(%rsi)
+	rmmovq %r14, 48(%rsi)
+	rmmovq %rcx, 56(%rsi)
+	rmmovq %rbx, 64(%rsi)
+	rmmovq %rbp, 72(%rsi)
+	andq %r8, %r8
+	jle Npos1
+	iaddq $1, %rax
+Npos1:
+	andq %r9, %r9
+	jle Npos2
+	iaddq $1, %rax
+Npos2:
+	andq %r10, %r10
+	jle Npos3
+	iaddq $1, %rax
+Npos3:
+	andq %r11, %r11
+	jle Npos4
+	iaddq $1, %rax
+Npos4:
+	andq %r12, %r12
+	jle Npos5
+	iaddq $1, %rax
+Npos5:
+	andq %r13, %r13
+	jle Npos6
+	iaddq $1, %rax
+Npos6:
+	andq %r14, %r14
+	jle Npos7
+	iaddq $1, %rax
+Npos7:
+	andq %rcx, %rcx
+	jle Npos8
+	iaddq $1, %rax
+Npos8:
+	andq %rbx, %rbx
+	jle Npos9
+	iaddq $1, %rax
+Npos9:
+	andq %rbp, %rbp
+	jle Npos10
+	iaddq $1, %rax
+Npos10:
+	iaddq $80, %rdi
+	iaddq $80, %rsi
+	andq %rdx, %rdx
+	je Done
+	jmp judge1
+
+Loop2:
+	mrmovq (%rdi), %r8
+	mrmovq 8(%rdi), %r9
+	mrmovq 16(%rdi), %r10
+	mrmovq 24(%rdi), %r11
+	mrmovq 32(%rdi), %r12
+
+	rmmovq %r8, (%rsi)
+	rmmovq %r9, 8(%rsi)
+	rmmovq %r10, 16(%rsi)
+	rmmovq %r11, 24(%rsi)
+	rmmovq %r12, 32(%rsi)
+	andq %r8, %r8
+	jle Npos11
+	iaddq $1, %rax
+Npos11:
+	andq %r9, %r9
+	jle Npos12
+	iaddq $1, %rax
+Npos12:
+	andq %r10, %r10
+	jle Npos13
+	iaddq $1, %rax
+Npos13:
+	andq %r11, %r11
+	jle Npos14
+	iaddq $1, %rax
+Npos14:
+	andq %r12, %r12
+	jle Npos15
+	iaddq $1, %rax
+Npos15:
+	iaddq $40, %rdi
+	iaddq $40, %rsi
+	andq %rdx, %rdx
+	je Done
+
+
+Loop:
+	mrmovq (%rdi), %r8
+	rmmovq %r8, (%rsi)
+	andq %r8, %r8
+	jle Nops
+	iaddq $1, %rax
+
+Nops:
+	iaddq $8,%rdi
+	iaddq $8, %rsi
+	iaddq $-1, %rdx
+	jg Loop

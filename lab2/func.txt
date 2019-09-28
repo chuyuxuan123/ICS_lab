@@ -1,0 +1,9 @@
+string_length(char *x) //return the length of string
+
+strings_not_equal(char *a, char *b)//判断两个字符串是否一样，一样返回0，不一样返回1
+
+read_line 读一行，加上参数之后读文件中的一行
+
+skip 未知
+
+read_six_numbers
